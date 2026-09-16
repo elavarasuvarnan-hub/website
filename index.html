@@ -2685,12 +2685,19 @@
     </div>
 
     <script>
-        // Preloader
-        window.addEventListener('load', () => {
-            setTimeout(() => {
-                document.getElementById('preloader').classList.add('hidden');
-            }, 1500);
+        // Preloader - guaranteed to close even on mobile slow networks
+        function hidePreloader() {
+            const preloader = document.getElementById('preloader');
+            if (preloader) preloader.classList.add('hidden');
+        }
+        document.addEventListener('DOMContentLoaded', () => {
+            setTimeout(hidePreloader, 1200);
         });
+        window.addEventListener('load', () => {
+            setTimeout(hidePreloader, 800);
+        });
+        // Absolute safety: never keep loader more than 3.5s
+        setTimeout(hidePreloader, 3500);
 
         // Custom Cursor
         const cursor = document.getElementById('cursor');
