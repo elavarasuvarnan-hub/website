@@ -399,6 +399,24 @@
             }
         }
 
+        @keyframes smoothFloat {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-15px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+        #hero-image{
+            animation: smoothFloat 2s ease-in-out infinite;
+        }
+
         .hero-content {
             position: relative;
             z-index: 1;
@@ -2382,7 +2400,7 @@
             </div>
             <div class="hero-media">
                 <div class="hero-image-frame">
-                    <img src="images/hero1.png" alt="Creative designer workspace with laptop">
+                    <img src="images/hero1.png" id="hero-image" alt="Creative designer workspace with laptop">
                 </div>
             </div>
         </div>
