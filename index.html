@@ -1049,6 +1049,13 @@
             margin: 0 auto;
         }
 
+        /* Grid 2 portrait poster (1080x1350) — show full image without cropping */
+        .social-grid .work-card:nth-child(2) img {
+            object-fit: contain;
+            object-position: center;
+            background: #1b1b1b;
+        }
+
         .work-card {
             position: relative;
             border-radius: 20px;
@@ -2800,13 +2807,11 @@
                     </div>
                     <div class="work-card reveal">
                         <div class="work-card-bg work-card-image">
-                            <img src="works/Sm2.jpg" alt="Social Poster 2">
+                            <img src="works/social-media-poster.jpg" alt="Social Poster 2">
                         </div>
                         <div class="work-overlay">
                             <div class="arrow"><i class="fas fa-arrow-up-right"></i></div>
-                         
                             <h3>Social Media Poster 2</h3>
-                           
                         </div>
                     </div>
                     <div class="work-card reveal">
