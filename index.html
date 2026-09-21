@@ -1606,7 +1606,7 @@
 
         /* ========== CONTACT ========== */
         .contact-wrapper {
-            max-width: 1000px;
+            max-width: 1200px;
             margin: 0 auto;
             display: grid;
             grid-template-columns: 1fr;
@@ -1617,7 +1617,7 @@
 
         .contact-details-row {
             display: grid;
-            grid-template-columns: repeat(4, 1fr);
+            grid-template-columns: repeat(5, 1fr);
             gap: 1.5rem;
             margin: 1rem 0 0.5rem;
         }
@@ -1793,6 +1793,144 @@
             width: 100%;
             justify-content: center;
             padding: 1rem;
+        }
+
+        /* ========== RESUME VIEWER MODAL ========== */
+        .resume-modal {
+            position: fixed;
+            inset: 0;
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 1.5rem;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.35s ease, visibility 0.35s ease;
+        }
+
+        .resume-modal.open {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .resume-modal-backdrop {
+            position: absolute;
+            inset: 0;
+            background: rgba(8, 8, 10, 0.92);
+            backdrop-filter: blur(8px);
+        }
+
+        .resume-modal-content {
+            position: relative;
+            z-index: 1;
+            width: min(1000px, 100%);
+            height: min(88vh, 900px);
+            background: #121214;
+            border: 1px solid rgba(212, 165, 116, 0.2);
+            border-radius: 20px;
+            box-shadow: 0 40px 100px rgba(0, 0, 0, 0.6);
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            transform: translateY(30px) scale(0.97);
+            transition: transform 0.35s cubic-bezier(0.175, 0.885, 0.32, 1.1);
+        }
+
+        .resume-modal.open .resume-modal-content {
+            transform: translateY(0) scale(1);
+        }
+
+        .resume-modal-topbar {
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+            padding: 0.9rem 1rem;
+            background: #1a1a1d;
+            border-bottom: 1px solid rgba(212, 165, 116, 0.18);
+            flex-shrink: 0;
+        }
+
+        .resume-modal-title {
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: var(--text);
+            margin-right: auto;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .resume-modal-title i {
+            color: var(--accent);
+        }
+
+        .resume-action-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.45rem;
+            padding: 0.55rem 1rem;
+            border-radius: 50px;
+            font-size: 0.78rem;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            text-decoration: none;
+            cursor: pointer;
+            border: 1px solid rgba(212, 165, 116, 0.3);
+            background: rgba(212, 165, 116, 0.1);
+            color: var(--accent);
+            font-family: 'Inter', sans-serif;
+            transition: all 0.25s ease;
+            white-space: nowrap;
+        }
+
+        .resume-action-btn:hover {
+            background: var(--gradient1);
+            color: var(--btn-text);
+            border-color: transparent;
+            transform: translateY(-1px);
+        }
+
+        .resume-action-btn.icon-only {
+            padding: 0.55rem 0.7rem;
+        }
+
+        .resume-modal-body {
+            flex: 1;
+            background: #525659;
+            min-height: 0;
+        }
+
+        .resume-modal-body iframe {
+            width: 100%;
+            height: 100%;
+            border: 0;
+            display: block;
+            background: #fff;
+        }
+
+        @media (max-width: 640px) {
+            .resume-modal {
+                padding: 0.8rem;
+            }
+
+            .resume-modal-content {
+                height: 86vh;
+            }
+
+            .resume-modal-topbar {
+                flex-wrap: wrap;
+            }
+
+            .resume-modal-title {
+                width: 100%;
+                margin-right: 0;
+                margin-bottom: 0.2rem;
+            }
         }
 
         /* ========== FOOTER ========== */
@@ -2392,7 +2530,7 @@
                 
                 <h1>I Create <span class="highlight">Visuals</span><br>That Speak Louder</h1>
                 <p class="hero-sub">Graphic Designer & Video Editor
-                    With 2+ years of experience, I transform ideas into impactful brand identities, digital artwork,
+                    With 3+ years of experience, I transform ideas into impactful brand identities, digital artwork,
                     motion graphics, and compelling video content.</p>
                 <div class="hero-buttons">
                     <a href="#work" class="btn-primary">View My Work <i class="fas fa-arrow-right"></i></a>
@@ -2455,7 +2593,7 @@
                     control.</p>
                 <div class="about-stats">
                     <div class="stat">
-                        <div class="stat-number">2+</div>
+                        <div class="stat-number">3+</div>
                         <div class="stat-label">Years Exp</div>
                     </div>
                     <div class="stat">
@@ -2994,6 +3132,16 @@
                                     style="font-size: 0.7rem;"></i></span>
                         </div>
                     </a>
+                    <a class="contact-detail contact-detail-link" id="resumeBox"
+                        href="works/Elavarasu%20resume.pdf" target="_blank" rel="noopener noreferrer"
+                        aria-label="View Resume">
+                        <div class="contact-detail-icon"><i class="fas fa-file-lines"></i></div>
+                        <div class="contact-detail-text">
+                            <h5>Resume</h5>
+                            <span>View / Download PDF <i class="fas fa-arrow-up-right"
+                                    style="font-size: 0.7rem;"></i></span>
+                        </div>
+                    </a>
                 </div>
                 <div class="social-links">
                     <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
@@ -3030,6 +3178,30 @@
                 <img id="videoModalImage" alt="Full preview">
             </div>
             <h3 class="video-modal-title" id="videoModalTitle"></h3>
+        </div>
+    </div>
+
+    <!-- Resume Viewer Modal - with Download / Share on top -->
+    <div class="resume-modal" id="resumeModal" role="dialog" aria-modal="true" aria-label="Resume viewer">
+        <div class="resume-modal-backdrop" id="resumeModalBackdrop"></div>
+        <div class="resume-modal-content">
+            <div class="resume-modal-topbar">
+                <div class="resume-modal-title"><i class="fas fa-file-lines"></i><span>Elavarasu — Resume</span>
+                </div>
+                <a class="resume-action-btn" id="resumeDownloadBtn" href="works/Elavarasu%20resume.pdf"
+                    download="Elavarasu-Resume.pdf"><i class="fas fa-download"></i> Download</a>
+                <button class="resume-action-btn" id="resumeShareBtn" type="button"><i class="fas fa-share-nodes"></i>
+                    Share</button>
+                <a class="resume-action-btn icon-only" id="resumeOpenBtn" href="works/Elavarasu%20resume.pdf"
+                    target="_blank" rel="noopener noreferrer" aria-label="Open in new tab"><i
+                        class="fas fa-arrow-up-right-from-square"></i></a>
+                <button class="resume-action-btn icon-only" id="resumeCloseBtn" type="button" aria-label="Close"><i
+                        class="fas fa-times"></i></button>
+            </div>
+            <div class="resume-modal-body">
+                <iframe id="resumeFrame" title="Elavarasu Resume PDF"
+                    src=""></iframe>
+            </div>
         </div>
     </div>
 
@@ -3196,7 +3368,64 @@
             if (e.key === 'Escape' && videoModal.classList.contains('open')) {
                 closeVideoModal();
             }
+            if (e.key === 'Escape' && resumeModal && resumeModal.classList.contains('open')) {
+                closeResumeModal();
+            }
         });
+
+        // Resume viewer modal - open PDF with Download / Share on top
+        const resumeBox = document.getElementById('resumeBox');
+        const resumeModal = document.getElementById('resumeModal');
+        const resumeFrame = document.getElementById('resumeFrame');
+        const resumeCloseBtn = document.getElementById('resumeCloseBtn');
+        const resumeBackdrop = document.getElementById('resumeModalBackdrop');
+        const resumeShareBtn = document.getElementById('resumeShareBtn');
+        const RESUME_PDF = 'works/Elavarasu%20resume.pdf';
+
+        function openResumeModal() {
+            if (!resumeModal) return;
+            resumeFrame.src = RESUME_PDF + '#toolbar=1&navpanes=0';
+            resumeModal.classList.add('open');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeResumeModal() {
+            if (!resumeModal) return;
+            resumeModal.classList.remove('open');
+            document.body.style.overflow = '';
+            resumeFrame.removeAttribute('src');
+        }
+
+        if (resumeBox && resumeModal) {
+            resumeBox.addEventListener('click', (e) => {
+                e.preventDefault();
+                openResumeModal();
+            });
+        }
+        if (resumeCloseBtn) resumeCloseBtn.addEventListener('click', closeResumeModal);
+        if (resumeBackdrop) resumeBackdrop.addEventListener('click', closeResumeModal);
+
+        if (resumeShareBtn) {
+            resumeShareBtn.addEventListener('click', async () => {
+                const absoluteUrl = new URL(RESUME_PDF, window.location.href).href;
+                const shareData = { title: 'Elavarasu — Resume', text: 'Check out my resume', url: absoluteUrl };
+                if (navigator.share) {
+                    try { await navigator.share(shareData); } catch (err) { /* user cancelled */ }
+                } else if (navigator.clipboard) {
+                    try {
+                        await navigator.clipboard.writeText(absoluteUrl);
+                        resumeShareBtn.innerHTML = '<i class="fas fa-check"></i> Copied!';
+                        setTimeout(() => {
+                            resumeShareBtn.innerHTML = '<i class="fas fa-share-nodes"></i> Share';
+                        }, 2000);
+                    } catch (err) {
+                        window.open(absoluteUrl, '_blank', 'noopener');
+                    }
+                } else {
+                    window.open(absoluteUrl, '_blank', 'noopener');
+                }
+            });
+        }
 
         // Work dropdown (click support for touch devices)
         const workDropdown = document.getElementById('workDropdown');
