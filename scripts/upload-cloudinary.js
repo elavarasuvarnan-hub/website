@@ -113,7 +113,7 @@ function escapeRegex(s) {
   return s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 }
 
-/** Rewrite index.html local paths -> Cloudinary URLs (case-insensitive, handles %20). */
+/** Rewrite index.html local paths -> Cloudinary URLs (idempotent + self-healing). */
 function linkIndexHtml(manifest) {
   if (!fs.existsSync(INDEX_PATH)) {
     console.log('index.html not found, skipping link step.');
@@ -123,15 +123,32 @@ function linkIndexHtml(manifest) {
   const bak = INDEX_PATH + '.bak';
   if (!fs.existsSync(bak)) fs.writeFileSync(bak, html); // one-time backup
 
+  const cloudEsc = escapeRegex(CLOUDINARY_CLOUD_NAME);
+  const folderEsc = escapeRegex(FOLDER);
+
+  // 1) Self-heal: collapse nested prefixes left by earlier multi-runs:
+  //    PREFIX PREFIX ... path  ->  PREFIX path  (keep innermost prefix)
+  const singlePrefix = `https://res\\.cloudinary\\.com/${cloudEsc}/(?:image|video)/upload/v\\d+/${folderEsc}/`;
+  const runRe = new RegExp(`(?:${singlePrefix}){2,}`, 'g');
+  const healed = (html.match(runRe) || []).length;
+  html = html.replace(runRe, (run) => {
+    const singles = run.match(new RegExp(singlePrefix, 'g'));
+    return singles[singles.length - 1];
+  });
+  if (healed > 0) console.log(`Healed ${healed} nested Cloudinary URL(s).`);
+
+  // 2) Idempotent replace: never match inside our own Cloudinary URLs
+  //    (they always contain "<FOLDER>/" right before the asset path).
   let replaced = 0;
   for (const [rel, info] of Object.entries(manifest)) {
     if (!info || !info.url) continue;
+    if (html.includes(info.url)) continue; // already linked exactly -> skip
     // match: rel, URL-encoded rel (%20 for spaces), and case-insensitive
     const encoded = rel.split('/').map(encodeURIComponent).join('/');
     const rawOnce = rel.replace(/ /g, '%20');
     const variants = [...new Set([rel, encoded, rawOnce])];
     for (const v of variants) {
-      const re = new RegExp(escapeRegex(v), 'gi');
+      const re = new RegExp(`(?<!${folderEsc}/)` + escapeRegex(v), 'gi');
       const hits = (html.match(re) || []).length;
       if (hits > 0) {
         html = html.replace(re, info.url);
