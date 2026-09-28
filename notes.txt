@@ -5,3 +5,9 @@ git commit -m "new"
 
 
 git push
+
+
+
+npm run upload
+
+npm run sync-push

@@ -1,0 +1,35 @@
+# secrets / local env
+.env
+
+# dependencies
+node_modules/
+
+# backup created by link step
+index.html.bak
+
+# ---- Assets served from Cloudinary - do not commit ----
+# (index.html uses Cloudinary URLs after `npm run upload:link`)
+images/
+videos/
+works/*.mp4
+works/*.MP4
+works/*.mov
+works/*.MOV
+works/*.webm
+works/*.WEBM
+works/*.jpg
+works/*.JPG
+works/*.jpeg
+works/*.JPEG
+works/*.png
+works/*.PNG
+works/*.webp
+works/*.WEBP
+works/*.gif
+works/*.GIF
+# keep resume PDF + small docs in git
+!works/*.pdf
+
+# OS junk
+.DS_Store
+Thumbs.db

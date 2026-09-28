@@ -1,0 +1,330 @@
+{
+  "images/hero1.png": {
+    "url": "https://res.cloudinary.com/sfwod0s3/image/upload/v1790586450/ewebsite/images/hero1.png",
+    "public_id": "ewebsite/images/hero1",
+    "resource_type": "image",
+    "bytes": 1453994,
+    "uploaded": true,
+    "uploadedAt": "2026-09-28T09:07:31.215Z"
+  },
+  "images/pic 1.png": {
+    "url": "https://res.cloudinary.com/sfwod0s3/image/upload/v1790586451/ewebsite/images/pic-1.png",
+    "public_id": "ewebsite/images/pic-1",
+    "resource_type": "image",
+    "bytes": 1925539,
+    "uploaded": true,
+    "uploadedAt": "2026-09-28T09:07:32.371Z"
+  },
+  "videos/reel4.mp4": {
+    "url": "https://res.cloudinary.com/sfwod0s3/video/upload/v1790586460/ewebsite/videos/reel4.mp4",
+    "public_id": "ewebsite/videos/reel4",
+    "resource_type": "video",
+    "bytes": 79543625,
+    "uploaded": true,
+    "uploadedAt": "2026-09-28T09:07:42.757Z"
+  },
+  "videos/reel5.mp4": {
+    "url": "https://res.cloudinary.com/sfwod0s3/video/upload/v1790586469/ewebsite/videos/reel5.mp4",
+    "public_id": "ewebsite/videos/reel5",
+    "resource_type": "video",
+    "bytes": 99015150,
+    "uploaded": true,
+    "uploadedAt": "2026-09-28T09:07:52.395Z"
+  },
+  "videos/video 1.mp4": {
+    "url": "https://res.cloudinary.com/sfwod0s3/video/upload/v1790586477/ewebsite/videos/video-1.mp4",
+    "public_id": "ewebsite/videos/video-1",
+    "resource_type": "video",
+    "bytes": 79399417,
+    "uploaded": true,
+    "uploadedAt": "2026-09-28T09:08:00.601Z"
+  },
+  "videos/video2.mp4": {
+    "url": "https://res.cloudinary.com/sfwod0s3/video/upload/v1790586483/ewebsite/videos/video2.mp4",
+    "public_id": "ewebsite/videos/video2",
+    "resource_type": "video",
+    "bytes": 37788356,
+    "uploaded": true,
+    "uploadedAt": "2026-09-28T09:08:05.071Z"
+  },
+  "works/Ai2.mp4": {
+    "url": "https://res.cloudinary.com/sfwod0s3/video/upload/v1790586486/ewebsite/works/Ai2.mp4",
+    "public_id": "ewebsite/works/Ai2",
+    "resource_type": "video",
+    "bytes": 22470617,
+    "uploaded": true,
+    "uploadedAt": "2026-09-28T09:08:07.980Z"
+  },
+  "works/Ai3.mp4": {
+    "url": "https://res.cloudinary.com/sfwod0s3/video/upload/v1790586488/ewebsite/works/Ai3.mp4",
+    "public_id": "ewebsite/works/Ai3",
+    "resource_type": "video",
+    "bytes": 11809168,
+    "uploaded": true,
+    "uploadedAt": "2026-09-28T09:08:10.272Z"
+  },
+  "works/Brabding1.jpg": {
+    "url": "https://res.cloudinary.com/sfwod0s3/image/upload/v1790586490/ewebsite/works/Brabding1.jpg",
+    "public_id": "ewebsite/works/Brabding1",
+    "resource_type": "image",
+    "bytes": 3453476,
+    "uploaded": true,
+    "uploadedAt": "2026-09-28T09:08:11.136Z"
+  },
+  "works/Brandin2.jpg": {
+    "url": "https://res.cloudinary.com/sfwod0s3/image/upload/v1790586491/ewebsite/works/Brandin2.jpg",
+    "public_id": "ewebsite/works/Brandin2",
+    "resource_type": "image",
+    "bytes": 3386305,
+    "uploaded": true,
+    "uploadedAt": "2026-09-28T09:08:12.071Z"
+  },
+  "works/Event1.jpg": {
+    "url": "https://res.cloudinary.com/sfwod0s3/image/upload/v1790586491/ewebsite/works/Event1.jpg",
+    "public_id": "ewebsite/works/Event1",
+    "resource_type": "image",
+    "bytes": 1387817,
+    "uploaded": true,
+    "uploadedAt": "2026-09-28T09:08:12.787Z"
+  },
+  "works/Event2.jpg": {
+    "url": "https://res.cloudinary.com/sfwod0s3/image/upload/v1790586492/ewebsite/works/Event2.jpg",
+    "public_id": "ewebsite/works/Event2",
+    "resource_type": "image",
+    "bytes": 3055902,
+    "uploaded": true,
+    "uploadedAt": "2026-09-28T09:08:13.662Z"
+  },
+  "works/Event3.jpg": {
+    "url": "https://res.cloudinary.com/sfwod0s3/image/upload/v1790586493/ewebsite/works/Event3.jpg",
+    "public_id": "ewebsite/works/Event3",
+    "resource_type": "image",
+    "bytes": 711565,
+    "uploaded": true,
+    "uploadedAt": "2026-09-28T09:08:14.424Z"
+  },
+  "works/Magazine1.jpg": {
+    "url": "https://res.cloudinary.com/sfwod0s3/image/upload/v1790586494/ewebsite/works/Magazine1.jpg",
+    "public_id": "ewebsite/works/Magazine1",
+    "resource_type": "image",
+    "bytes": 3814800,
+    "uploaded": true,
+    "uploadedAt": "2026-09-28T09:08:15.241Z"
+  },
+  "works/Redesign1.jpg": {
+    "url": "https://res.cloudinary.com/sfwod0s3/image/upload/v1790586495/ewebsite/works/Redesign1.jpg",
+    "public_id": "ewebsite/works/Redesign1",
+    "resource_type": "image",
+    "bytes": 609268,
+    "uploaded": true,
+    "uploadedAt": "2026-09-28T09:08:16.051Z"
+  },
+  "works/Redesign2.jpg": {
+    "url": "https://res.cloudinary.com/sfwod0s3/image/upload/v1790586495/ewebsite/works/Redesign2.jpg",
+    "public_id": "ewebsite/works/Redesign2",
+    "resource_type": "image",
+    "bytes": 927940,
+    "uploaded": true,
+    "uploadedAt": "2026-09-28T09:08:16.795Z"
+  },
+  "works/Redesign3.jpg": {
+    "url": "https://res.cloudinary.com/sfwod0s3/image/upload/v1790586496/ewebsite/works/Redesign3.jpg",
+    "public_id": "ewebsite/works/Redesign3",
+    "resource_type": "image",
+    "bytes": 508234,
+    "uploaded": true,
+    "uploadedAt": "2026-09-28T09:08:17.500Z"
+  },
+  "works/Sm1.jpg": {
+    "url": "https://res.cloudinary.com/sfwod0s3/image/upload/v1790586497/ewebsite/works/Sm1.jpg",
+    "public_id": "ewebsite/works/Sm1",
+    "resource_type": "image",
+    "bytes": 719883,
+    "uploaded": true,
+    "uploadedAt": "2026-09-28T09:08:18.274Z"
+  },
+  "works/Sm2.jpg": {
+    "url": "https://res.cloudinary.com/sfwod0s3/image/upload/v1790586498/ewebsite/works/Sm2.jpg",
+    "public_id": "ewebsite/works/Sm2",
+    "resource_type": "image",
+    "bytes": 668302,
+    "uploaded": true,
+    "uploadedAt": "2026-09-28T09:08:19.125Z"
+  },
+  "works/Story1.jpg": {
+    "url": "https://res.cloudinary.com/sfwod0s3/image/upload/v1790586499/ewebsite/works/Story1.jpg",
+    "public_id": "ewebsite/works/Story1",
+    "resource_type": "image",
+    "bytes": 881909,
+    "uploaded": true,
+    "uploadedAt": "2026-09-28T09:08:19.733Z"
+  },
+  "works/Vinayaga1.mp4": {
+    "url": "https://res.cloudinary.com/sfwod0s3/video/upload/v1790586499/ewebsite/works/Vinayaga1.mp4",
+    "public_id": "ewebsite/works/Vinayaga1",
+    "resource_type": "video",
+    "bytes": 3074980,
+    "uploaded": true,
+    "uploadedAt": "2026-09-28T09:08:20.972Z"
+  },
+  "works/branding2(1).jpg": {
+    "url": "https://res.cloudinary.com/sfwod0s3/image/upload/v1790586501/ewebsite/works/branding21.jpg",
+    "public_id": "ewebsite/works/branding21",
+    "resource_type": "image",
+    "bytes": 3920052,
+    "uploaded": true,
+    "uploadedAt": "2026-09-28T09:08:21.885Z"
+  },
+  "works/download.jpg": {
+    "url": "https://res.cloudinary.com/sfwod0s3/image/upload/v1790586501/ewebsite/works/download.jpg",
+    "public_id": "ewebsite/works/download",
+    "resource_type": "image",
+    "bytes": 922387,
+    "uploaded": true,
+    "uploadedAt": "2026-09-28T09:08:22.605Z"
+  },
+  "works/log3.jpg": {
+    "url": "https://res.cloudinary.com/sfwod0s3/image/upload/v1790586502/ewebsite/works/log3.jpg",
+    "public_id": "ewebsite/works/log3",
+    "resource_type": "image",
+    "bytes": 66280,
+    "uploaded": true,
+    "uploadedAt": "2026-09-28T09:08:23.155Z"
+  },
+  "works/logo 1.jpg": {
+    "url": "https://res.cloudinary.com/sfwod0s3/image/upload/v1790586503/ewebsite/works/logo-1.jpg",
+    "public_id": "ewebsite/works/logo-1",
+    "resource_type": "image",
+    "bytes": 35295,
+    "uploaded": true,
+    "uploadedAt": "2026-09-28T09:08:24.427Z"
+  },
+  "works/logo2.jpg": {
+    "url": "https://res.cloudinary.com/sfwod0s3/image/upload/v1790586504/ewebsite/works/logo2.jpg",
+    "public_id": "ewebsite/works/logo2",
+    "resource_type": "image",
+    "bytes": 69715,
+    "uploaded": true,
+    "uploadedAt": "2026-09-28T09:08:25.071Z"
+  },
+  "works/magazine back page.jpg": {
+    "url": "https://res.cloudinary.com/sfwod0s3/image/upload/v1790586505/ewebsite/works/magazine-back-page.jpg",
+    "public_id": "ewebsite/works/magazine-back-page",
+    "resource_type": "image",
+    "bytes": 3975774,
+    "uploaded": true,
+    "uploadedAt": "2026-09-28T09:08:25.994Z"
+  },
+  "works/news.jpg": {
+    "url": "https://res.cloudinary.com/sfwod0s3/image/upload/v1790586506/ewebsite/works/news.jpg",
+    "public_id": "ewebsite/works/news",
+    "resource_type": "image",
+    "bytes": 6250814,
+    "uploaded": true,
+    "uploadedAt": "2026-09-28T09:08:27.606Z"
+  },
+  "works/other1.jpg": {
+    "url": "https://res.cloudinary.com/sfwod0s3/image/upload/v1790586508/ewebsite/works/other1.jpg",
+    "public_id": "ewebsite/works/other1",
+    "resource_type": "image",
+    "bytes": 2302743,
+    "uploaded": true,
+    "uploadedAt": "2026-09-28T09:08:30.089Z"
+  },
+  "works/other2.jpg": {
+    "url": "https://res.cloudinary.com/sfwod0s3/image/upload/v1790586510/ewebsite/works/other2.jpg",
+    "public_id": "ewebsite/works/other2",
+    "resource_type": "image",
+    "bytes": 4023770,
+    "uploaded": true,
+    "uploadedAt": "2026-09-28T09:08:31.063Z"
+  },
+  "works/redesign4.jpg": {
+    "url": "https://res.cloudinary.com/sfwod0s3/image/upload/v1790586510/ewebsite/works/redesign4.jpg",
+    "public_id": "ewebsite/works/redesign4",
+    "resource_type": "image",
+    "bytes": 303358,
+    "uploaded": true,
+    "uploadedAt": "2026-09-28T09:08:31.671Z"
+  },
+  "works/sm3.jpg": {
+    "url": "https://res.cloudinary.com/sfwod0s3/image/upload/v1790586511/ewebsite/works/sm3.jpg",
+    "public_id": "ewebsite/works/sm3",
+    "resource_type": "image",
+    "bytes": 507924,
+    "uploaded": true,
+    "uploadedAt": "2026-09-28T09:08:32.319Z"
+  },
+  "works/sm4.jpg": {
+    "url": "https://res.cloudinary.com/sfwod0s3/image/upload/v1790586512/ewebsite/works/sm4.jpg",
+    "public_id": "ewebsite/works/sm4",
+    "resource_type": "image",
+    "bytes": 599670,
+    "uploaded": true,
+    "uploadedAt": "2026-09-28T09:08:33.011Z"
+  },
+  "works/social media poster.jpg": {
+    "url": "https://res.cloudinary.com/sfwod0s3/image/upload/v1790586512/ewebsite/works/social-media-poster.jpg",
+    "public_id": "ewebsite/works/social-media-poster",
+    "resource_type": "image",
+    "bytes": 597201,
+    "uploaded": true,
+    "uploadedAt": "2026-09-28T09:08:33.856Z"
+  },
+  "works/social-media-poster.jpg": {
+    "url": "https://res.cloudinary.com/sfwod0s3/image/upload/v1790586512/ewebsite/works/social-media-poster.jpg",
+    "public_id": "ewebsite/works/social-media-poster",
+    "resource_type": "image",
+    "bytes": 597201,
+    "uploaded": true,
+    "uploadedAt": "2026-09-28T09:08:34.244Z"
+  },
+  "works/story 6.jpg": {
+    "url": "https://res.cloudinary.com/sfwod0s3/image/upload/v1790586514/ewebsite/works/story-6.jpg",
+    "public_id": "ewebsite/works/story-6",
+    "resource_type": "image",
+    "bytes": 1084692,
+    "uploaded": true,
+    "uploadedAt": "2026-09-28T09:08:35.207Z"
+  },
+  "works/story2.jpg": {
+    "url": "https://res.cloudinary.com/sfwod0s3/image/upload/v1790586515/ewebsite/works/story2.jpg",
+    "public_id": "ewebsite/works/story2",
+    "resource_type": "image",
+    "bytes": 1099852,
+    "uploaded": true,
+    "uploadedAt": "2026-09-28T09:08:36.746Z"
+  },
+  "works/story3.jpg": {
+    "url": "https://res.cloudinary.com/sfwod0s3/image/upload/v1790586516/ewebsite/works/story3.jpg",
+    "public_id": "ewebsite/works/story3",
+    "resource_type": "image",
+    "bytes": 933384,
+    "uploaded": true,
+    "uploadedAt": "2026-09-28T09:08:37.475Z"
+  },
+  "works/story4.jpg": {
+    "url": "https://res.cloudinary.com/sfwod0s3/image/upload/v1790586517/ewebsite/works/story4.jpg",
+    "public_id": "ewebsite/works/story4",
+    "resource_type": "image",
+    "bytes": 1244071,
+    "uploaded": true,
+    "uploadedAt": "2026-09-28T09:08:38.134Z"
+  },
+  "works/story5.jpg": {
+    "url": "https://res.cloudinary.com/sfwod0s3/image/upload/v1790586518/ewebsite/works/story5.jpg",
+    "public_id": "ewebsite/works/story5",
+    "resource_type": "image",
+    "bytes": 828438,
+    "uploaded": true,
+    "uploadedAt": "2026-09-28T09:08:38.767Z"
+  },
+  "works/video3.mp4": {
+    "url": "https://res.cloudinary.com/sfwod0s3/video/upload/v1790586520/ewebsite/works/video3.mp4",
+    "public_id": "ewebsite/works/video3",
+    "resource_type": "video",
+    "bytes": 24707948,
+    "uploaded": true,
+    "uploadedAt": "2026-09-28T09:08:42.792Z"
+  }
+}
