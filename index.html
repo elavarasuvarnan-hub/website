@@ -3148,28 +3148,31 @@
                 <p>Have a project in mind or just want to chat about design? I'd love to hear from you. Let's
                     collaborate and bring your vision to life.</p>
                 <div class="contact-details-row">
-                    <div class="contact-detail">
+                    <a class="contact-detail contact-detail-link" href="mailto:elavarasuvarnan@gmail.com">
                         <div class="contact-detail-icon"><i class="fas fa-envelope"></i></div>
                         <div class="contact-detail-text">
                             <h5>Email</h5>
-                            <span><a style="text-decoration: none; color: white;"
-                                    href="mailto:elavarasuvarnan@gmail.com">elavarasuvarnan@gmail.com</a></span>
+                            <span>elavarasuvarnan@gmail.com <i class="fas fa-arrow-up-right"
+                                    style="font-size: 0.7rem;"></i></span>
                         </div>
-                    </div>
-                    <div class="contact-detail">
+                    </a>
+                    <a class="contact-detail contact-detail-link" href="tel:+918098070560">
                         <div class="contact-detail-icon"><i class="fas fa-phone"></i></div>
                         <div class="contact-detail-text">
                             <h5>Phone</h5>
-                            <span>+91 8098070560 </span>
+                            <span>+91 8098070560 <i class="fas fa-arrow-up-right"
+                                    style="font-size: 0.7rem;"></i></span>
                         </div>
-                    </div>
-                    <div class="contact-detail">
+                    </a>
+                    <a class="contact-detail contact-detail-link" href="https://maps.google.com/?q=Chennai,TamilNadu"
+                        target="_blank" rel="noopener noreferrer">
                         <div class="contact-detail-icon"><i class="fas fa-location-dot"></i></div>
                         <div class="contact-detail-text">
                             <h5>Location</h5>
-                            <span>Chennai,TamilNadu</span>
+                            <span>Chennai,TamilNadu <i class="fas fa-arrow-up-right"
+                                    style="font-size: 0.7rem;"></i></span>
                         </div>
-                    </div>
+                    </a>
                     <a class="contact-detail contact-detail-link"
                         href="https://www.linkedin.com/in/elavarasu-ps-0540a8357/" target="_blank"
                         rel="noopener noreferrer">
@@ -3314,9 +3317,21 @@
         }
         bindCursorTip();
 
-        document.querySelectorAll('a, button, .work-card, .skill-card').forEach(el => {
-            el.addEventListener('mouseenter', () => cursor.style.transform = 'scale(2)');
-            el.addEventListener('mouseleave', () => cursor.style.transform = 'scale(1)');
+        // Grow custom cursor on interactive elements - delegated to avoid blink/flicker
+        // when moving between nested children (icon, text, arrow inside contact cards).
+        document.addEventListener('mouseover', (e) => {
+            if (e.target.closest('a, button, .work-card, .skill-card, .contact-detail')) {
+                cursor.style.transform = 'scale(2)';
+            }
+        });
+        document.addEventListener('mouseout', (e) => {
+            if (e.target.closest('a, button, .work-card, .skill-card, .contact-detail')) {
+                // Only shrink when truly leaving to a non-interactive element
+                const toEl = e.relatedTarget;
+                if (!toEl || !toEl.closest || !toEl.closest('a, button, .work-card, .skill-card, .contact-detail')) {
+                    cursor.style.transform = 'scale(1)';
+                }
+            }
         });
 
         // Navbar scroll effect
